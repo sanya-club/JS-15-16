@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'OpenSans', sans-serif;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.title {
+  font-size: 62px;
+}
+
+.blue {
+  color: dodgerblue;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.green {
+  color: green;
+}
+
+.search-form input[type='text'] {
+  padding: 10px;
+  font-size: 14px;
+  width: 90%;
+  outline: 0;
+}
+
+.search-form input[type='text']:focus {
+  border: 1px solid dodgerblue;
+  padding: 11px;
+}
+
+.submit {
+  position: relative;
+  top: -5px;
+  right: 5px;
+  border: 0;
+  background: dodgerblue;
+  padding: 20px 25px;
+  cursor: pointer;
+  /*
+  width: 35px;
+height: 36px;
+*/
+}
+
+.submit:hover {
+  background: blue;
+}
+
+.submit::after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 16px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.submit::before {
+  content: '';
+  position: absolute;
+  top: 23px;
+  left: 28px;
+  width: 2px;
+  height: 8px;
+  background: #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.search-fail {
+  margin: 30px 0;
+}
+
+#results {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.link {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.result-link {
+  margin: 0;
+  font-size: 12px;
+  color: green;
+}
+
+.total-result {
+  font-size: 13px;
+  color: #ccc;
+  margin: 20px 0;
+}
